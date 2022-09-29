@@ -1,21 +1,13 @@
-const tasks = [
-    {
-    id: 1, 
-    text: 'Molly',
-    date: 'Feb 2 2022' ,
-    finished: true,
-},
-{
-    id: 2, 
-    text: 'Chony',
-    date: 'Feb 2 2022' ,
-    finished: false,
-}
-]
+import Task from "./Task"
 
-const Tasks = () => {
+const Tasks = ( {tasks} ) => {
     return (
-        <div> Tasks </div>
+        <>
+        {tasks.map((task) => (
+           <Task key={task.id} task={task}/> 
+        ))}
+        </>
+     
     )
 
 }
