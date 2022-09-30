@@ -8,20 +8,20 @@ function App() {
     [
         {
         id: 1, 
-        text: 'Molly',
-        date: 'Feb 2 2022' ,
+        text: 'Finish React project',
+        date: 'Sep 30 2022' ,
         finished: true,
     },
     {
         id: 2, 
-        text: 'Chony',
-        date: 'Feb 2 2022' ,
+        text: 'Grocery shopping',
+        date: 'Oct 2 2022' ,
         finished: false,
     },
     {
         id: 3, 
-        text: 'Holly',
-        date: 'Feb 2 2022' ,
+        text: 'Wash car',
+        date: 'Oct 5 2022' ,
         finished: false,
     }
     ]
