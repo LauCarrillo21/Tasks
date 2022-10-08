@@ -10,20 +10,20 @@ function App() {
     [
         {
         id: 1, 
-        text: 'Finish React project',
-        date: 'Sep 30 2022' ,
+        text: 'Follow-up meeting',
+        date: 'Thursday 9:00am' ,
         done: true,
     },
     {
         id: 2, 
         text: 'Grocery shopping',
-        date: 'Oct 2 2022' ,
+        date: 'Friday 3:00pm' ,
         done: false,
     },
     {
         id: 3, 
         text: 'Wash car',
-        date: 'Oct 5 2022' ,
+        date: 'Saturday 11:30am' ,
         done: false,
     }
     ]
@@ -50,7 +50,7 @@ const doneTask = (id) => {
 
   return (
     <div className='container'>
-      <Header title='Tasks'  onAdd={()=> setShowForm(!showForm)} showForm={showForm} />
+      <Header title='Daily Tasks'  onAdd={()=> setShowForm(!showForm)} showForm={showForm} />
       {showForm && <AddTask onAdd={addTask} />}
       {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={doneTask}/> : 'There are no tasks to show'}
     </div>

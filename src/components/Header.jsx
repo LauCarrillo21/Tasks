@@ -9,7 +9,7 @@ const Header = ({title, onAdd, showForm}) => {
   return (
     <header className="header">
      <h1> {title} </h1>
-     < Button  text={showForm ? 'Close' : 'Add' } color={showForm ? 'red' : 'green' }  onClick={onAdd}/>
+     < Button  text={showForm ? 'Close' : 'Add a task' } color={showForm ? '#870000' : '#302e2e' }  onClick={onAdd}/>
     </header>
   )
 }
